@@ -1,8 +1,13 @@
+        <div style="display: flex;" class="col-md-12">
+            <div class="card">
         <article class="post">
             <div class="title">
-                <a target="_blank">{{title}}</a>
+                <a class="card-header text-uppercase" target="_blank">{{title}}</a>
             </div>
             <div class="meta">
+                <a class="card-body">{{post_content}}</a>
                 <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
             </div>
         </article>
+        </div>
+        </div>

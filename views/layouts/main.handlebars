@@ -21,10 +21,10 @@
       <a href="/" class="app-title">Tech Blog</a>
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">Dashboard</a>
-        <button id="logout" style="float:right;" class="app-title">Logout</button>
+        <a class="app-title" style="float: right;margin-right:15px;" href="/dashboard">Dashboard</a>
+        <a id="logout" style="float:right;margin-right:15px;" href="/" class="app-title">Logout</a>
         {{else}}
-        <a class="app-title" style="float: right;" href="/login">Login</a>
+        <a class="app-title" style="float: right;margin-right:15px;" href="/login">Login</a>
         {{/if}}
       </nav>
     </header>

@@ -25,7 +25,7 @@ router.get("/:id", (req, res) => {
     include: [
       {
         model: Post,
-        attributes: ["id", "title", "created_at"],
+        attributes: ["id", "title", "post_content", "created_at"],
       },
       // include the Comment model here:
       {
@@ -51,7 +51,7 @@ router.get("/:id", (req, res) => {
 });
 
 //POST /api/users
-router.post("/", withAuth, (req, res) => {
+router.post("/", (req, res) => {
   //expects {username: 'Lernatino', email: 'lertanio@email.com',password: 'password1234'}
   User.create({
     username: req.body.username,
