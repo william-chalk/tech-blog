@@ -21,7 +21,8 @@ async function commentFormHandler(event) {
       },
     });
     if (response.ok) {
-      document.location.reload();
+      console.log(comment_text);
+      document.location.replace("/");
     } else {
       alert(response.statusText);
     }

@@ -1,17 +1,21 @@
-<article class="post">
-    {{> post-info post}}
-</article>
+{{> post-info post}}
+
 {{#if loggedIn}}
 <form class="comment-form">
-    <div>
-        <textarea name="comment-body"></textarea>
-    </div>
-    <div>
-        <button type="submit">Add Comment</button>
-    </div>
+  <div class="card">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+  </div>
+  <div>
+    <button class="btn" style="background-color: rgb(56, 44, 44);" type="submit">Comment</button>
+  </div>
+
 </form>
 {{/if}}
-    {{> comments post.comments}}
+
+{{> comments post.comments}}
+
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
 {{/if}}
