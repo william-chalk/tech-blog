@@ -1,4 +1,4 @@
-# tech-blog
+# Tech Blog
 
 # Usage
 A website for users to talk about everything tech! Either Login or Sign up and create a Post, Then leave a Comment on others posts to let them know what you thought about it.
